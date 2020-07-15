@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "the lake",
+    "description": "You stand by a lake. The water is dark, almost black. A cold mist coils its way over the surface."
+  },
+  {
+    "id": 2,
+    "title": "the castle",
+    "description": "you stand before a castle"
+  },
+  {
+    "id": 3,
+    "title": "the forest",
+    "description": "you are in a forest"
+  },
+  {
+    "id": 4,
+    "title": "the mountain",
+    "description": "you stand atop a mountain"
+  }
+]

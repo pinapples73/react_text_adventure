@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'AdventureText';
+    src: local('AdventureText'), url(./assets/fonts/AdventureText.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #19334d;
+    color: gainsboro;
+    font-family: 'AdventureText';
+    font-size: 40px;
+    text-rendering: geometricPrecision;
+    image-rendering: pixelated;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+
+    display: flex;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+            ". middle-area ."
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+    grid-area: middle-area;
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.location-image {
+    width: 100%;
+    height: auto;
+}
+
+.interaction-main {
+}
+
+.location-description {
+}
+
+.exitButton {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    color: hotpink;
+    font-family: AdventureText;
+    font-size: 40px;
+    background-color: transparent;
+}
+.exitButton:hover {
+    color: deeppink;
+}
+
+.exitButton:active {
+    outline: none;
+    font-size: 38px;
 }

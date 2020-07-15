@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "location": 1,
+    "leadsTo": 2,
+    "direction": "north",
+    "screenDescription": "north is a path",
+    "examineDescription": "This narrow path skirts the lake and leads north.",
+    "status": "unblocked"
+  },
+  {
+    "id": 2,
+    "location": 1,
+    "leadsTo": 3,
+    "direction": "south",
+    "screenDescription": "south you can see a wood",
+    "examineDescription": "The way south is blocked by thick thorn bushes.",
+    "status": "blocked"
+  },
+  {
+    "id": 3,
+    "location": 1,
+    "leadsTo": 4,
+    "direction": "east",
+    "screenDescription": "east there is a farm",
+    "examineDescription": "The farm looks deserted and rundown.",
+    "status": "unblocked"
+  },
+  {
+    "id": 4,
+    "location": 2,
+    "leadsTo": 1,
+    "direction": "south",
+    "screenDescription": "south a lake is visible",
+    "examineDescription": "It looks cold and foreboding",
+    "status": "unblocked"
+  }
+]
