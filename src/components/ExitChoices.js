@@ -1,10 +1,10 @@
 import React from 'react';
 
 const ExitChoices = (props) => {
-
     if(props.exitData === null) {
         return null
     }
+
 
     function handleClick(event){
         props.onClick(event.target.value);
@@ -24,9 +24,7 @@ const ExitChoices = (props) => {
     return (
         <div className='interaction-main'>
             <p>Exits lead: {exits}</p>
-
         </div>
-
     )
 
 }

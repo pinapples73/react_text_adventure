@@ -17,7 +17,7 @@ class MainContainer extends Component {
             currentLocation: 1
         }
         this.handleExitChoice = this.handleExitChoice.bind(this);
-        this.loadData = this.loadData.bind(this);
+        // this.loadData = this.loadData.bind(this); -- not required to bind this as not used in a callback function
     }
 
     componentDidMount() {
@@ -33,8 +33,6 @@ class MainContainer extends Component {
         newLocation = parseInt(newLocation);
         this.setState({currentLocation: newLocation})
     }
-
-
 
 
     render() {

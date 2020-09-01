@@ -9,39 +9,37 @@ const Locations = (props) => {
     let locationTitle = props.locationData[props.currentLocation - 1].title.toUpperCase();
     let locationDescription = props.locationData[props.currentLocation - 1].description;
 
-    //loop (map) over the array of exists
+    //loop over the array of exists
     //if the exit location is equal to the current location
     //add it to an array of exits
-    const exits = props.exitData.map((exit) => {
-        let exitList = [];
-        if(exit.location === props.currentLocation) {
-            exitList.push(exit.screenDescription);
-        }
-        return exitList;
-    })
 
-    let exitString = stringManipulation("To the ", exits)
+    let exits = [];
+    for(let exit of props.exitData){
+        if(exit.location === props.currentLocation){
+            exits.push(exit.screenDescription);
+        }
+    }
+    console.log("Exits returned for this location: ", exits.length);
+
+    let exitString = sentenceConstructor("To the ", exits)
 
     //this function takes in a base string and an array of strings
     //it loops over each string in array and checks if its the last one
     //if so it adds 'and' instead of ', ' between the list of strings
-    function stringManipulation(baseString, baseArray){
-        const arrayLength = baseArray.length -1;
-        let intermediateString = "";
-        let endString = "";
+    function sentenceConstructor(baseString, baseArray){
 
         baseArray.forEach((singleString, index) => {
-            if(index === arrayLength){
-                baseString += " and ";
-            } else if(index > 0){
-                baseString += ", "
-            }
-            intermediateString = baseString.concat(singleString);
-            baseString = intermediateString;
+            baseString = baseString.concat(singleString);
 
+            if(index === baseArray.length - 2){
+                baseString = baseString.concat(" and ");
+            }
+            else if(index < baseArray.length -2){
+                baseString = baseString.concat(", ");
+            }
         })
-        endString = intermediateString + ". ";
-        return endString;
+        baseString = baseString + ". ";
+        return baseString;
     }
 
 
