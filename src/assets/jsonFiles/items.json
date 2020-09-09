@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "stateTitle": "thorn bushes dry",
+    "typedNoun": "bushes",
+    "location": 1,
+    "type": "scenic",
+    "visible": "TRUE",
+    "screenDescription": "thorn bushes",
+    "examineDescription": "The thick thorn bushes are blocking the way south.",
+    "interactions": "thorn bushes dry"
+  },
+  {
+    "id": 1,
+    "stateTitle": "thorn bushes oily",
+    "typedNoun": "bushes",
+    "location": 1,
+    "type": "scenic",
+    "visible": "FALSE",
+    "screenDescription": "oil covered thorn bushes",
+    "examineDescription": "The thick thorn bushes are blocking the way south. The are covered in parafin oil.",
+    "interactions": "thorn bushes oily"
+  },
+  {
+    "id": 1,
+    "stateTitle": "thorn bushes burnt",
+    "typedNoun": "bushes",
+    "location": 1,
+    "type": "scenic",
+    "visible": "FALSE",
+    "screenDescription": "burnt remains of thorn bushes",
+    "examineDescription": "All that remains of the thorn bushes are twigs and a burnt patch of earth.",
+    "interactions": null
+  },
+  {
+    "id": 2,
+    "stateTitle": "lighter",
+    "typedNoun": "lighter",
+    "location": 1,
+    "type": "inventory",
+    "visible": "TRUE",
+    "screenDescription": "a lighter",
+    "examineDescription": "It's just a normal every day lighter.",
+    "interactions": "lighter"
+  },
+  {
+    "id": 3,
+    "stateTitle": "oil lamp",
+    "typedNoun": "lamp",
+    "location": 1,
+    "type": "inventory",
+    "visible": "TRUE",
+    "screenDescription": "an oil lamp",
+    "examineDescription": "It's an old oil lamp with no wick. I'm not going to be able to light this.",
+    "interactions": "oil lamp"
+  }
+]

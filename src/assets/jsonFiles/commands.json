@@ -1,0 +1,177 @@
+[
+  {
+    "typedName": "examine",
+    "commandName": "examine",
+    "displayText": ""
+  },
+  {
+    "typedName": "exam",
+    "commandName": "examine",
+    "displayText": ""
+  },
+  {
+    "typedName": "look",
+    "commandName": "look",
+    "displayText": ""
+  },
+  {
+    "typedName": "get",
+    "commandName": "get",
+    "displayText": ""
+  },
+  {
+    "typedName": "take",
+    "commandName": "get",
+    "displayText": ""
+  },
+  {
+    "typedName": "drop",
+    "commandName": "drop",
+    "displayText": ""
+  },
+  {
+    "typedName": "use",
+    "commandName": "use",
+    "displayText": ""
+  },
+  {
+    "typedName": "open",
+    "commandName": "open",
+    "displayText": ""
+  },
+  {
+    "typedName": "close",
+    "commandName": "close",
+    "displayText": ""
+  },
+  {
+    "typedName": "push",
+    "commandName": "push",
+    "displayText": ""
+  },
+  {
+    "typedName": "pull",
+    "commandName": "pull",
+    "displayText": ""
+  },
+  {
+    "typedName": "throw",
+    "commandName": "throw",
+    "displayText": ""
+  },
+  {
+    "typedName": "climb",
+    "commandName": "climb",
+    "displayText": ""
+  },
+  {
+    "typedName": "north",
+    "commandName": "north",
+    "displayText": ""
+  },
+  {
+    "typedName": "n*",
+    "commandName": "north",
+    "displayText": ""
+  },
+  {
+    "typedName": "south",
+    "commandName": "south",
+    "displayText": ""
+  },
+  {
+    "typedName": "s*",
+    "commandName": "south",
+    "displayText": ""
+  },
+  {
+    "typedName": "east",
+    "commandName": "east",
+    "displayText": ""
+  },
+  {
+    "typedName": "e*",
+    "commandName": "east",
+    "displayText": ""
+  },
+  {
+    "typedName": "west",
+    "commandName": "west",
+    "displayText": ""
+  },
+  {
+    "typedName": "w*",
+    "commandName": "west",
+    "displayText": ""
+  },
+  {
+    "typedName": "northwest",
+    "commandName": "northwest",
+    "displayText": ""
+  },
+  {
+    "typedName": "nw*",
+    "commandName": "northwest",
+    "displayText": ""
+  },
+  {
+    "typedName": "northeast",
+    "commandName": "northeast",
+    "displayText": ""
+  },
+  {
+    "typedName": "ne*",
+    "commandName": "northeast",
+    "displayText": ""
+  },
+  {
+    "typedName": "southwest",
+    "commandName": "southwest",
+    "displayText": ""
+  },
+  {
+    "typedName": "sw*",
+    "commandName": "southwest",
+    "displayText": ""
+  },
+  {
+    "typedName": "southeast",
+    "commandName": "southeast",
+    "displayText": ""
+  },
+  {
+    "typedName": "se*",
+    "commandName": "southeast",
+    "displayText": ""
+  },
+  {
+    "typedName": "up",
+    "commandName": "up",
+    "displayText": ""
+  },
+  {
+    "typedName": "u*",
+    "commandName": "up",
+    "displayText": ""
+  },
+  {
+    "typedName": "down",
+    "commandName": "down",
+    "displayText": ""
+  },
+  {
+    "typedName": "d*",
+    "commandName": "down",
+    "displayText": ""
+  },
+  {
+    "typedName": "inventory",
+    "commandName": "inventory",
+    "displayText": ""
+  },
+  {
+    "typedName": "inv",
+    "commandName": "inventory",
+    "displayText": ""
+  }
+]

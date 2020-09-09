@@ -5,7 +5,6 @@
     "leadsTo": 2,
     "direction": "north",
     "screenDescription": "north is a path",
-    "examineDescription": "This narrow path skirts the lake and leads north.",
     "status": "unblocked"
   },
   {
@@ -14,7 +13,6 @@
     "leadsTo": 3,
     "direction": "south",
     "screenDescription": "south you can see a wood",
-    "examineDescription": "The way south is blocked by thick thorn bushes.",
     "status": "blocked"
   },
   {
@@ -23,7 +21,6 @@
     "leadsTo": 4,
     "direction": "east",
     "screenDescription": "east there is a farm",
-    "examineDescription": "The farm looks deserted and rundown.",
     "status": "unblocked"
   },
   {
@@ -32,7 +29,6 @@
     "leadsTo": 1,
     "direction": "south",
     "screenDescription": "south a lake is visible",
-    "examineDescription": "It looks cold and foreboding",
     "status": "unblocked"
   }
 ]

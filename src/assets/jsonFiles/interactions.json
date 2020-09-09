@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "interactionObject": "thorn bushes dry",
+    "command": "use",
+    "combineWith": "lighter",
+    "screenDescription": "You try and light the bushes but they are just not catching. Looks like you need some accelerant.",
+    "hideObject": "FALSE",
+    "showObject": "",
+    "openExit": ""
+  },
+  {
+    "id": 1,
+    "interactionObject": "thorn bushes dry",
+    "command": "throw",
+    "combineWith": "oil lamp",
+    "screenDescription": "You throw the oil lamp at the thorn bushes. It smashes covering them in paraffin oil.",
+    "hideObject": "TRUE",
+    "showObject": "thorn bushes oily",
+    "openExit": ""
+  },
+  {
+    "id": 2,
+    "interactionObject": "thorn bushes oily",
+    "command": "use",
+    "combineWith": "lighter",
+    "screenDescription": "The lighter ignites the paraffin oil. Before long the bushes are but charred remains.",
+    "hideObject": "TRUE",
+    "showObject": "thorn bushes burnt",
+    "openExit": 4
+  }
+]

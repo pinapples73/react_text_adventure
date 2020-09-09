@@ -13,21 +13,20 @@ body {
 }
 
 img {
-
     display: flex;
     justify-content: center;
 }
 
 .grid-layout{
     display: grid;
-    grid-template-columns: auto 800px auto;
+    grid-template-columns:30% auto 30%;
     grid-template-rows: auto;
     grid-template-areas:
-            ". middle-area ."
+            ". main-area ."
 }
 
 .main{
-    grid-area: middle-area;
+    grid-area: main-area;
     display: flex;
     flex-direction: column;
 }
@@ -52,7 +51,6 @@ img {
 
 .exitButton {
     text-align: center;
-    width: 100px;
     height: 30px;
     margin-right: 10px;
     border: none;
@@ -66,6 +64,24 @@ img {
 }
 
 .exitButton:active {
+    outline: none;
+    font-size: 38px;
+}
+
+.itemButton {
+    text-align: center;
+    margin-right: 10px;
+    border: none;
+    color: hotpink;
+    font-family: AdventureText;
+    font-size: 40px;
+    background-color: transparent;
+}
+.itemButton:hover {
+    color: deeppink;
+}
+
+.itemButton:active {
     outline: none;
     font-size: 38px;
 }

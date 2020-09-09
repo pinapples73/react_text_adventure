@@ -12,9 +12,9 @@ const ExitChoices = (props) => {
 
 
     const exits = props.exitData.map((exit, index) => {
-        if(exit.location === props.currentLocation) {
+        if(exit.location === props.currentLocation && exit.status === "unblocked") {
             return (
-                <button className = "exitButton" key={index} value={exit.leadsTo} onClick={handleClick}>{exit.direction}</button>
+                <button className = "exitButton" key={index} value={exit.leadsTo} onClick={handleClick}>-{exit.direction}</button>
             )
         }
         return "";
