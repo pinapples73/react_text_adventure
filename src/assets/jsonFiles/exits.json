@@ -5,7 +5,8 @@
     "leadsTo": 2,
     "direction": "north",
     "screenDescription": "north is a path",
-    "status": "unblocked"
+    "status": "unblocked",
+    "blockedText": ""
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "leadsTo": 3,
     "direction": "south",
     "screenDescription": "south you can see a wood",
-    "status": "blocked"
+    "status": "blocked",
+    "blockedText": "Some thick thorn bushes block the way south."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "leadsTo": 4,
     "direction": "east",
     "screenDescription": "east there is a farm",
-    "status": "unblocked"
+    "status": "unblocked",
+    "blockedText": ""
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "leadsTo": 1,
     "direction": "south",
     "screenDescription": "south a lake is visible",
-    "status": "unblocked"
+    "status": "unblocked",
+    "blockedText": ""
   }
 ]

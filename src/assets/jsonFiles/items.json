@@ -6,7 +6,7 @@
     "location": 1,
     "type": "scenic",
     "visible": "TRUE",
-    "screenDescription": "thorn bushes",
+    "screenDescription": "some thorn bushes",
     "examineDescription": "The thick thorn bushes are blocking the way south.",
     "interactions": "thorn bushes dry"
   },
@@ -17,7 +17,7 @@
     "location": 1,
     "type": "scenic",
     "visible": "FALSE",
-    "screenDescription": "oil covered thorn bushes",
+    "screenDescription": "some oil covered thorn bushes",
     "examineDescription": "The thick thorn bushes are blocking the way south. The are covered in parafin oil.",
     "interactions": "thorn bushes oily"
   },
@@ -28,7 +28,7 @@
     "location": 1,
     "type": "scenic",
     "visible": "FALSE",
-    "screenDescription": "burnt remains of thorn bushes",
+    "screenDescription": "the burnt remains of thorn bushes",
     "examineDescription": "All that remains of the thorn bushes are twigs and a burnt patch of earth.",
     "interactions": null
   },

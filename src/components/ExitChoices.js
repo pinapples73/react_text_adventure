@@ -1,29 +1,27 @@
 import React from 'react';
+import {sentenceConstructor} from "./utils";
 
 const ExitChoices = (props) => {
     if(props.exitData === null) {
         return null
     }
 
-
-    function handleClick(event){
-        props.onClick(event.target.value);
+    //loop over the array of exists
+    //if the exit location is equal to the current location
+    //add it to an array of exits
+    let exits = [];
+    for(let exit of props.exitData){
+        if(exit.location === props.currentLocation){
+            exits.push(exit.screenDescription);
+        }
     }
 
-
-    const exits = props.exitData.map((exit, index) => {
-        if(exit.location === props.currentLocation && exit.status === "unblocked") {
-            return (
-                <button className = "exitButton" key={index} value={exit.leadsTo} onClick={handleClick}>-{exit.direction}</button>
-            )
-        }
-        return "";
-    })
-
+    //organise the exits using the sentenceConstructor function adding ',' or 'and' where necessary
+    let exitString = sentenceConstructor("To the ", exits)
 
     return (
-        <div className='interaction-main'>
-            <p>Exits lead: {exits}</p>
+        <div className='location-description'>
+            {exitString}
         </div>
     )
 

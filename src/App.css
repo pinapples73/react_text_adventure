@@ -4,22 +4,18 @@
 }
 
 body {
-    background-color: #19334d;
+    background-color: #424954;
     color: gainsboro;
     font-family: 'AdventureText';
-    font-size: 40px;
+    font-size: 30px;
     text-rendering: geometricPrecision;
     image-rendering: pixelated;
 }
 
-img {
-    display: flex;
-    justify-content: center;
-}
 
 .grid-layout{
     display: grid;
-    grid-template-columns:30% auto 30%;
+    grid-template-columns:20% auto 20%;
     grid-template-rows: auto;
     grid-template-areas:
             ". main-area ."
@@ -29,59 +25,74 @@ img {
     grid-area: main-area;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .location-title{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 0px;
+    padding: 5px 10px 5px 10px
 }
 
-
 .location-image {
-    width: 100%;
+    display: flex;
+    width: 80%;
     height: auto;
 }
 
-.interaction-main {
-}
-
 .location-description {
+    padding: 5px 10px 0px 10px
 }
 
-.exitButton {
-    text-align: center;
-    height: 30px;
-    margin-right: 10px;
+.text-input {
     border: none;
     color: hotpink;
-    font-family: AdventureText;
-    font-size: 40px;
     background-color: transparent;
-}
-.exitButton:hover {
-    color: deeppink;
-}
-
-.exitButton:active {
-    outline: none;
-    font-size: 38px;
+    font-family: 'AdventureText';
+    font-size: 30px;
+    text-rendering: geometricPrecision;
 }
 
-.itemButton {
-    text-align: center;
-    margin-right: 10px;
+.text-input:active {
     border: none;
+    outline: none;
     color: hotpink;
-    font-family: AdventureText;
-    font-size: 40px;
-    background-color: transparent;
-}
-.itemButton:hover {
-    color: deeppink;
 }
 
-.itemButton:active {
+.text-input:focus {
+    border: none;
     outline: none;
-    font-size: 38px;
+    color: hotpink;
+}
+
+.interactive-area {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background-color: #383e47;
+}
+
+.text-field {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-radius: 6px;
+    background-color: #5f6878;
+}
+
+.input-field {
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.output-text{
+    padding: 20px;
 }

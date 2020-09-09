@@ -1,26 +1,24 @@
 import React from 'react';
+import {sentenceConstructor} from "./utils";
 
 const ItemChoices = (props) => {
     if(props.itemData === null) {
         return null
     }
 
-    function handleClick(event){
-        props.onClick(event.target.value);
+    let items = [];
+    for(let item of props.itemData){
+        if(item.location === props.currentLocation && item.visible === "TRUE"){
+            items.push(item.screenDescription);
+        }
     }
 
-    const items = props.itemData.map((item, index) => {
-        if(item.location === props.currentLocation && item.visible === "TRUE") {
-            return (
-                <button className = "itemButton" key={index} value={item.stateTitle} onClick={handleClick}>-{item.screenDescription}</button>
-            )
-        }
-        return "";
-    })
+    //organise the items using the sentenceConstructor function adding ',' or 'and' where necessary
+    let itemString = sentenceConstructor("You notice ", items)
 
     return (
-        <div className='interaction-main'>
-            You can see: {items}
+        <div className='location-description'>
+            <p>{itemString}</p>
         </div>
     )
 }
