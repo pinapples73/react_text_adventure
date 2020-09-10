@@ -46,6 +46,7 @@ body {
 }
 
 .text-input {
+    width: auto;
     border: none;
     color: hotpink;
     background-color: transparent;

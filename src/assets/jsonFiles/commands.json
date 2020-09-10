@@ -1,177 +1,212 @@
 [
   {
-    "typedName": "examine",
-    "commandName": "examine",
-    "displayText": ""
+    "id": 1,
+    "typedNoun": "examine",
+    "actualNoun": "examine",
+    "type": "default"
   },
   {
-    "typedName": "exam",
-    "commandName": "examine",
-    "displayText": ""
+    "id": 2,
+    "typedNoun": "exam",
+    "actualNoun": "examine",
+    "type": "default"
   },
   {
-    "typedName": "look",
-    "commandName": "look",
-    "displayText": ""
+    "id": 3,
+    "typedNoun": "look",
+    "actualNoun": "look",
+    "type": "single"
   },
   {
-    "typedName": "get",
-    "commandName": "get",
-    "displayText": ""
+    "id": 4,
+    "typedNoun": "get",
+    "actualNoun": "get",
+    "type": "default"
   },
   {
-    "typedName": "take",
-    "commandName": "get",
-    "displayText": ""
+    "id": 5,
+    "typedNoun": "take",
+    "actualNoun": "get",
+    "type": "default"
   },
   {
-    "typedName": "drop",
-    "commandName": "drop",
-    "displayText": ""
+    "id": 6,
+    "typedNoun": "drop",
+    "actualNoun": "drop",
+    "type": "default"
   },
   {
-    "typedName": "use",
-    "commandName": "use",
-    "displayText": ""
+    "id": 7,
+    "typedNoun": "use",
+    "actualNoun": "use",
+    "type": "default"
   },
   {
-    "typedName": "open",
-    "commandName": "open",
-    "displayText": ""
+    "id": 8,
+    "typedNoun": "open",
+    "actualNoun": "open",
+    "type": "default"
   },
   {
-    "typedName": "close",
-    "commandName": "close",
-    "displayText": ""
+    "id": 9,
+    "typedNoun": "close",
+    "actualNoun": "close",
+    "type": "default"
   },
   {
-    "typedName": "push",
-    "commandName": "push",
-    "displayText": ""
+    "id": 10,
+    "typedNoun": "push",
+    "actualNoun": "push",
+    "type": "default"
   },
   {
-    "typedName": "pull",
-    "commandName": "pull",
-    "displayText": ""
+    "id": 11,
+    "typedNoun": "pull",
+    "actualNoun": "pull",
+    "type": "default"
   },
   {
-    "typedName": "throw",
-    "commandName": "throw",
-    "displayText": ""
+    "id": 12,
+    "typedNoun": "throw",
+    "actualNoun": "throw",
+    "type": "default"
   },
   {
-    "typedName": "climb",
-    "commandName": "climb",
-    "displayText": ""
+    "id": 13,
+    "typedNoun": "climb",
+    "actualNoun": "climb",
+    "type": "default"
   },
   {
-    "typedName": "north",
-    "commandName": "north",
-    "displayText": ""
+    "id": 14,
+    "typedNoun": "north",
+    "actualNoun": "north",
+    "type": "movement"
   },
   {
-    "typedName": "n*",
-    "commandName": "north",
-    "displayText": ""
+    "id": 15,
+    "typedNoun": "n$$",
+    "actualNoun": "north",
+    "type": "movement"
   },
   {
-    "typedName": "south",
-    "commandName": "south",
-    "displayText": ""
+    "id": 16,
+    "typedNoun": "south",
+    "actualNoun": "south",
+    "type": "movement"
   },
   {
-    "typedName": "s*",
-    "commandName": "south",
-    "displayText": ""
+    "id": 17,
+    "typedNoun": "s$$",
+    "actualNoun": "south",
+    "type": "movement"
   },
   {
-    "typedName": "east",
-    "commandName": "east",
-    "displayText": ""
+    "id": 18,
+    "typedNoun": "east",
+    "actualNoun": "east",
+    "type": "movement"
   },
   {
-    "typedName": "e*",
-    "commandName": "east",
-    "displayText": ""
+    "id": 19,
+    "typedNoun": "e$$",
+    "actualNoun": "east",
+    "type": "movement"
   },
   {
-    "typedName": "west",
-    "commandName": "west",
-    "displayText": ""
+    "id": 20,
+    "typedNoun": "west",
+    "actualNoun": "west",
+    "type": "movement"
   },
   {
-    "typedName": "w*",
-    "commandName": "west",
-    "displayText": ""
+    "id": 21,
+    "typedNoun": "w$$",
+    "actualNoun": "west",
+    "type": "movement"
   },
   {
-    "typedName": "northwest",
-    "commandName": "northwest",
-    "displayText": ""
+    "id": 22,
+    "typedNoun": "northwest",
+    "actualNoun": "northwest",
+    "type": "movement"
   },
   {
-    "typedName": "nw*",
-    "commandName": "northwest",
-    "displayText": ""
+    "id": 23,
+    "typedNoun": "nw$$",
+    "actualNoun": "northwest",
+    "type": "movement"
   },
   {
-    "typedName": "northeast",
-    "commandName": "northeast",
-    "displayText": ""
+    "id": 24,
+    "typedNoun": "northeast",
+    "actualNoun": "northeast",
+    "type": "movement"
   },
   {
-    "typedName": "ne*",
-    "commandName": "northeast",
-    "displayText": ""
+    "id": 25,
+    "typedNoun": "ne$$",
+    "actualNoun": "northeast",
+    "type": "movement"
   },
   {
-    "typedName": "southwest",
-    "commandName": "southwest",
-    "displayText": ""
+    "id": 26,
+    "typedNoun": "southwest",
+    "actualNoun": "southwest",
+    "type": "movement"
   },
   {
-    "typedName": "sw*",
-    "commandName": "southwest",
-    "displayText": ""
+    "id": 27,
+    "typedNoun": "sw$$",
+    "actualNoun": "southwest",
+    "type": "movement"
   },
   {
-    "typedName": "southeast",
-    "commandName": "southeast",
-    "displayText": ""
+    "id": 28,
+    "typedNoun": "southeast",
+    "actualNoun": "southeast",
+    "type": "movement"
   },
   {
-    "typedName": "se*",
-    "commandName": "southeast",
-    "displayText": ""
+    "id": 29,
+    "typedNoun": "se$$",
+    "actualNoun": "southeast",
+    "type": "movement"
   },
   {
-    "typedName": "up",
-    "commandName": "up",
-    "displayText": ""
+    "id": 30,
+    "typedNoun": "up",
+    "actualNoun": "up",
+    "type": "movement"
   },
   {
-    "typedName": "u*",
-    "commandName": "up",
-    "displayText": ""
+    "id": 31,
+    "typedNoun": "u$$",
+    "actualNoun": "up",
+    "type": "movement"
   },
   {
-    "typedName": "down",
-    "commandName": "down",
-    "displayText": ""
+    "id": 32,
+    "typedNoun": "down",
+    "actualNoun": "down",
+    "type": "movement"
   },
   {
-    "typedName": "d*",
-    "commandName": "down",
-    "displayText": ""
+    "id": 33,
+    "typedNoun": "d$$",
+    "actualNoun": "down",
+    "type": "movement"
   },
   {
-    "typedName": "inventory",
-    "commandName": "inventory",
-    "displayText": ""
+    "id": 34,
+    "typedNoun": "inventory",
+    "actualNoun": "inventory",
+    "type": "single"
   },
   {
-    "typedName": "inv",
-    "commandName": "inventory",
-    "displayText": ""
+    "id": 35,
+    "typedNoun": "inv",
+    "actualNoun": "inventory",
+    "type": "single"
   }
 ]

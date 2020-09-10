@@ -12,6 +12,9 @@ import ItemChoices from "../components/ItemChoices";
 import TextInterpreter from "../components/TextInterpreter";
 import OutputField from "../components/OutputField";
 
+import { parserNoun, parserVerb } from "../functional/parser";
+import {checkForValidMovement} from "../functional/interactions";
+
 
 class MainContainer extends Component {
     constructor(props) {
@@ -21,8 +24,11 @@ class MainContainer extends Component {
             locationData: null,
             exitData: null,
             itemData: null,
+            commandData: null,
+            interactionData: null,
             currentLocation: 1,
-            currentCommand: ""
+            currentCommand: "",
+            outputText: ""
         }
         this.handleInteraction = this.handleInteraction.bind(this);
     }
@@ -32,16 +38,32 @@ class MainContainer extends Component {
     }
 
     loadData(){
-        this.setState({locationData: dataLocation})
-        this.setState({exitData: dataExists})
-        this.setState({itemData: dataItems})
-        this.setState({commandData: dataCommands})
-        this.setState({interactionData: dataInteractions})
+        this.setState({locationData: dataLocation});
+        this.setState({exitData: dataExists});
+        this.setState({itemData: dataItems});
+        this.setState({commandData: dataCommands});
+        this.setState({interactionData: dataInteractions});
     }
 
     handleInteraction(newCommand){
-        console.log(newCommand)
-        this.setState({ currentCommand: newCommand })
+        this.setState({ currentCommand: newCommand });
+        let verbData = parserVerb(newCommand, this.state.commandData);
+        let movementData = [];
+
+        if(verbData.type === "movement"){
+            movementData = checkForValidMovement(this.state.currentLocation, verbData.actualNoun, this.state.exitData);
+            this.setState({outputText: movementData[1]});
+            console.log("new locaiton: ", movementData[0])
+            if(this.state.currentLocation !== movementData[0]){
+                this.setState({currentLocation: movementData[0]})
+            }
+
+        } else if(verbData.type === "single"){
+            console.log("This is a single - no noun needed - command");
+        } else {
+            let nounData = parserNoun(newCommand, this.state.itemData)
+            console.log("noun data returned is: ", nounData)
+        }
     }
 
 
@@ -54,7 +76,7 @@ class MainContainer extends Component {
                     <ItemChoices itemData = {this.state.itemData} currentLocation = {this.state.currentLocation}/>
                 </div>
                 <div className="interactive-area">
-                    <OutputField/>
+                    <OutputField displayText = {this.state.outputText} />
                     <TextInterpreter lastCommand = {this.state.currentCommand} onEnter = {this.handleInteraction}/>
                 </div>
             </div>

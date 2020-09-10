@@ -22,7 +22,9 @@ class TextInterpreter extends Component {
             return
         }
 
-        this.props.onEnter(this.state.text);
+        const commandPassed = this.state.text + "$$"
+
+        this.props.onEnter(commandPassed);
 
         this.setState({text: "" })
     }

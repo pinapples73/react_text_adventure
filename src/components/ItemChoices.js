@@ -1,5 +1,5 @@
 import React from 'react';
-import {sentenceConstructor} from "./utils";
+import {sentenceConstructor} from "../functional/utils";
 
 const ItemChoices = (props) => {
     if(props.itemData === null) {
