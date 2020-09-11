@@ -3,79 +3,79 @@
     "id": 1,
     "typedNoun": "examine",
     "actualNoun": "examine",
-    "type": "default"
+    "type": "standard"
   },
   {
     "id": 2,
     "typedNoun": "exam",
     "actualNoun": "examine",
-    "type": "default"
+    "type": "standard"
   },
   {
     "id": 3,
     "typedNoun": "look",
-    "actualNoun": "look",
-    "type": "single"
+    "actualNoun": "examine",
+    "type": "standard"
   },
   {
     "id": 4,
     "typedNoun": "get",
     "actualNoun": "get",
-    "type": "default"
+    "type": "standard"
   },
   {
     "id": 5,
     "typedNoun": "take",
     "actualNoun": "get",
-    "type": "default"
+    "type": "standard"
   },
   {
     "id": 6,
     "typedNoun": "drop",
     "actualNoun": "drop",
-    "type": "default"
+    "type": "standard"
   },
   {
     "id": 7,
     "typedNoun": "use",
     "actualNoun": "use",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 8,
     "typedNoun": "open",
     "actualNoun": "open",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 9,
     "typedNoun": "close",
     "actualNoun": "close",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 10,
     "typedNoun": "push",
     "actualNoun": "push",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 11,
     "typedNoun": "pull",
     "actualNoun": "pull",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 12,
     "typedNoun": "throw",
     "actualNoun": "throw",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 13,
     "typedNoun": "climb",
     "actualNoun": "climb",
-    "type": "default"
+    "type": "complex"
   },
   {
     "id": 14,
@@ -206,6 +206,12 @@
   {
     "id": 35,
     "typedNoun": "inv",
+    "actualNoun": "inventory",
+    "type": "single"
+  },
+  {
+    "id": 36,
+    "typedNoun": "i$$",
     "actualNoun": "inventory",
     "type": "single"
   }

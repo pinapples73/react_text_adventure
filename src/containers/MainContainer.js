@@ -13,7 +13,7 @@ import TextInterpreter from "../components/TextInterpreter";
 import OutputField from "../components/OutputField";
 
 import { parserNoun, parserVerb } from "../functional/parser";
-import {checkForValidMovement} from "../functional/interactions";
+import {checkForValidMovement, processStandardVerbNounCommand} from "../functional/interactions";
 
 
 class MainContainer extends Component {
@@ -27,8 +27,8 @@ class MainContainer extends Component {
             commandData: null,
             interactionData: null,
             currentLocation: 1,
-            currentCommand: "",
-            outputText: ""
+            outputText: "",
+            inventory: []
         }
         this.handleInteraction = this.handleInteraction.bind(this);
     }
@@ -46,23 +46,58 @@ class MainContainer extends Component {
     }
 
     handleInteraction(newCommand){
-        this.setState({ currentCommand: newCommand });
         let verbData = parserVerb(newCommand, this.state.commandData);
-        let movementData = [];
 
-        if(verbData.type === "movement"){
-            movementData = checkForValidMovement(this.state.currentLocation, verbData.actualNoun, this.state.exitData);
-            this.setState({outputText: movementData[1]});
-            console.log("new locaiton: ", movementData[0])
-            if(this.state.currentLocation !== movementData[0]){
-                this.setState({currentLocation: movementData[0]})
+        let returnedData = [];
+
+        if(verbData != null){
+            switch (verbData.type){
+                case "movement":
+                    returnedData = checkForValidMovement(this.state.currentLocation, verbData.actualNoun, this.state.exitData);
+                    this.setState({outputText: returnedData[1]});
+                    if(this.state.currentLocation !== returnedData[0]){
+                        this.setState({currentLocation: returnedData[0]})
+                    }
+                    break;
+                case "single":
+                    console.log("This is a single - no noun needed - command");
+                    break;
+                case "standard":
+                    const nounDataS = parserNoun(newCommand, this.state.itemData);
+                    if(nounDataS.length !== 0){
+                        // console.log("Standard Command")
+                        returnedData = processStandardVerbNounCommand(verbData.actualNoun, nounDataS, this.state.currentLocation, this.state.itemData)
+                    } else {
+                        returnedData.push(`You cannot ${verbData.actualNoun} that.`);
+                    }
+                    this.setState({outputText: returnedData[0]})
+                    if(returnedData.length > 1){
+                        for(let index = 0; index < this.state.itemData.length; index++) {
+                            if (returnedData[1] === "get") {
+                                if (nounDataS[0].id === this.state.itemData[index].id) {
+                                    let itemDataCopy = Object.assign({}, this.state.itemData);
+                                    itemDataCopy[index].location = 9999;
+                                }
+                            } else if (returnedData[1] === "drop") {
+                                if (nounDataS[0].id === this.state.itemData[index].id) {
+                                    let itemDataCopy = Object.assign({}, this.state.itemData);
+                                    itemDataCopy[index].location = this.state.currentLocation;
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case "complex":
+                    const nounDataC = parserNoun(newCommand, this.state.itemData);
+                    if(nounDataC.length !== 0){
+                        console.log("Complex Command")
+                    }
+                    break;
+                default:
+                    break;
             }
-
-        } else if(verbData.type === "single"){
-            console.log("This is a single - no noun needed - command");
         } else {
-            let nounData = parserNoun(newCommand, this.state.itemData)
-            console.log("noun data returned is: ", nounData)
+            this.setState({outputText: "You can't do that you dafty!"});
         }
     }
 

@@ -11,7 +11,7 @@
     "interactions": "thorn bushes dry"
   },
   {
-    "id": 1,
+    "id": 2,
     "stateTitle": "thorn bushes oily",
     "typedNoun": "bushes",
     "location": 1,
@@ -22,7 +22,7 @@
     "interactions": "thorn bushes oily"
   },
   {
-    "id": 1,
+    "id": 3,
     "stateTitle": "thorn bushes burnt",
     "typedNoun": "bushes",
     "location": 1,
@@ -33,7 +33,7 @@
     "interactions": null
   },
   {
-    "id": 2,
+    "id": 4,
     "stateTitle": "lighter",
     "typedNoun": "lighter",
     "location": 1,
@@ -44,7 +44,7 @@
     "interactions": "lighter"
   },
   {
-    "id": 3,
+    "id": 5,
     "stateTitle": "oil lamp",
     "typedNoun": "lamp",
     "location": 1,
